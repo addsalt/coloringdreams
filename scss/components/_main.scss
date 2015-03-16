@@ -1,0 +1,289 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+    box-sizing: border-box;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+*, *:before, *:after {box-sizing: inherit;}
+
+*, *:after, 
+*:before { 
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    box-sizing: border-box; }
+
+body, html {padding: 0; margin: 0;}
+
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+
+body {
+    background-color: $purplelight;
+    overflow-x: hidden;
+    text-align: center;
+}
+
+
+/* Buttons */
+
+.button-yellow {
+    @include button($purpledark, $yellowlight, $yellowdark);
+    max-width: 15rem;
+}
+
+#carta {
+    background-color: $grey;
+    border: solid 10px $purpledark;
+    padding: 6rem 5% 4rem;
+    color: $purpledark;
+    margin-top: 7.5rem;
+    position: relative;
+    margin-bottom: 8rem;
+    @media only screen and (min-width: 50em) {
+        margin-bottom: 8rem;
+    }
+}
+
+#carta:after {
+    content: '';
+    position: absolute;
+    width: 190px;
+    height: 190px;
+    top: -95px;
+    left: 45%;
+    -webkit-transform: translateX(-53px);
+    transform: translateX(-53px);
+    background: url(../../images/luciana.svg);
+    border: solid 10px $purpledark;
+    border-radius: 360px;
+}
+
+#filosofia {
+    padding: 0 5%;
+    background-color: #9ac7ca;
+    color: $purpledark;
+    position: relative;
+    z-index: 2;
+    @media only screen and (min-width: 60em) {
+        padding: 0 5% 7rem;
+    }
+    @media only screen and (min-width: 80em) {
+        padding: 0 12% 7rem;
+    }
+    p {
+        @media only screen and (min-width: 60em) {
+            text-align: left;
+        }
+    }
+    h2 {
+        @media only screen and (min-width: 60em) {
+            text-align: left;
+        }
+    }
+}
+
+#filosofia:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 16rem;
+    top: 0;
+    width: 100%;
+    background: url(../../images/cloud-top.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;  
+    z-index: -1;
+    -webkit-transform: translateY(-8rem);
+    transform: translateY(-8rem);
+    @media only screen and (min-width: 50em) {
+        -webkit-transform: translateY(-12rem);
+        transform: translateY(-12rem);
+    }
+    @media only screen and (min-width: 79em) {
+        -webkit-transform: translateY(-13rem);
+        transform: translateY(-13rem);
+    }
+}
+
+#filosofia:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 25rem;
+    top: -12rem;
+    width: 100%;
+    background: url(../../images/cloud-top.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100%;  
+    opacity: .3;
+    z-index: -1;
+    -webkit-transform: rotateY(180deg);
+    @media only screen and (min-width: 50em) {
+        top: -16rem;
+    }
+    @media only screen and (min-width: 79em) {
+        top: -19rem;
+    }
+}
+
+.image-holder, .image-rotate {
+    display: block;
+    width: 31.25rem;
+    height: 31.25rem;
+    position: absolute;
+    top:0;
+}
+
+.filosofia-illus {
+    position: relative;
+    display: block;
+    width: 31.25rem;
+    height: 31.25rem;
+    margin: 0 auto;
+    -webkit-transform: scale(.6,.6);
+    top: -6rem;
+    left: -4rem;
+    @media only screen and (min-width: 30em) {
+        -webkit-transform: scale(.8,.8);
+        top: 0;
+        left: 0;
+    }
+}
+
+
+
+.chico, .lineas {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.lineas {
+    -webkit-animation: rotate 10s linear infinite;
+}
+ 
+.illus {
+    width: 6.25em;
+    @include zero;
+    display: block;
+    position: absolute;
+    top: 12em;
+    left: 12em;
+    -webkit-animation: myOrbit 10s linear infinite;
+       -moz-animation: myOrbit 10s linear infinite;
+         -o-animation: myOrbit 10s linear infinite;
+            animation: myOrbit 10s linear infinite;
+    
+}
+
+.illus-2 {
+    -webkit-animation-delay: 1210ms;
+       -moz-animation-delay: 1210ms;
+         -o-animation-delay: 1210ms;
+            animation-delay: 1210ms;
+}
+
+.illus-3 {
+    -webkit-animation-delay: 3800ms;
+       -moz-animation-delay: 1468ms;
+         -o-animation-delay: 1468ms;
+            animation-delay: 1468ms;
+}
+
+.illus-4 {
+    -webkit-animation-delay: 5050ms;
+       -moz-animation-delay: 5050ms;
+         -o-animation-delay: 5050ms;
+            animation-delay: 5050ms;
+}
+
+.illus-5 {
+    -webkit-animation-delay: 6250ms;
+       -moz-animation-delay: 6000ms;
+         -o-animation-delay: 6000ms;
+            animation-delay: 6000ms;
+}
+
+.illus-6 {
+    -webkit-animation-delay: 7500ms;
+       -moz-animation-delay: 7500ms;
+         -o-animation-delay: 7500ms;
+            animation-delay: 7500ms;
+}
+
+.illus-7 {
+    -webkit-animation-delay: 8750ms;
+       -moz-animation-delay: 8750ms;
+         -o-animation-delay: 8750ms;
+            animation-delay: 8750ms;
+    //-webkit-transform: translateX(180px);
+}
+
+.illus-8 {
+    -webkit-animation-delay: 2500ms;
+       -moz-animation-delay: 2500ms;
+         -o-animation-delay: 2500ms;
+            animation-delay: 2500ms  ;
+    //-webkit-transform: translateX(180px);
+}
+
+/* Animations */
+
+@-webkit-keyframes rotate {
+    from{ -webkit-transform: rotate(0deg); }
+    to{ -webkit-transform: rotate(360deg); }
+}
+
+@keyframes rotate {
+    from{ -webkit-transform: rotate(0deg); }
+    to{ -webkit-transform: rotate(360deg); }
+}
+
+@-webkit-keyframes myOrbit {
+    from { -webkit-transform: rotate(0deg) translateX(10.625em) rotate(0deg); }
+    to   { -webkit-transform: rotate(360deg) translateX(10.625em) rotate(-360deg); }
+}
+
+@-moz-keyframes myOrbit {
+    from { -moz-transform: rotate(0deg) translateX(10.625em) rotate(0deg); }
+    to   { -moz-transform: rotate(360deg) translateX(10.625em) rotate(-360deg); }
+}
+
+@-o-keyframes myOrbit {
+    from { -o-transform: rotate(0deg) translateX(10.625em) rotate(0deg); }
+    to   { -o-transform: rotate(360deg) translateX(10.625em) rotate(-360deg); }
+}
+
+@keyframes myOrbit {
+    from { transform: rotate(0deg) translateX(10.625em) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(10.625em) rotate(-360deg); }
+}
+
+
+@media only screen and (min-width: 60em) {
+    
+    body {
+        padding-top: 10rem;
+    }
+    
+    section {
+        width: 90%;
+        max-width: 45rem;
+        margin: 0 auto;
+    }
+    
+}
+    
