@@ -777,8 +777,14 @@ body {
   overflow-x: hidden;
   text-align: center; }
 
+/* line 34, /Users/Daniela/Desktop/coloringdreams/scss/components/main */
+.flex-img {
+  display: block;
+  width: 100%;
+  margin: 0 auto; }
+
 /* Buttons */
-/* line 37, /Users/Daniela/Desktop/coloringdreams/scss/components/main */
+/* line 42, /Users/Daniela/Desktop/coloringdreams/scss/components/main */
 .button-yellow {
   display: block;
   z-index: 1;
@@ -803,7 +809,7 @@ body {
     box-shadow: 0 3px #eba212;
     top: 3px; }
 
-/* line 42, /Users/Daniela/Desktop/coloringdreams/scss/components/main */
+/* line 47, /Users/Daniela/Desktop/coloringdreams/scss/components/main */
 #carta {
   background-color: #d1d2d3;
   border: solid 10px #5c4b85;
@@ -816,7 +822,7 @@ body {
     #carta {
       margin-bottom: 8rem; } }
 
-/* line 55, /Users/Daniela/Desktop/coloringdreams/scss/components/main */
+/* line 60, /Users/Daniela/Desktop/coloringdreams/scss/components/main */
 #carta:after {
   content: '';
   position: absolute;
@@ -831,7 +837,7 @@ body {
   border: solid 10px #5c4b85;
   border-radius: 360px; }
 
-/* line 69, /Users/Daniela/Desktop/coloringdreams/scss/components/main */
+/* line 74, /Users/Daniela/Desktop/coloringdreams/scss/components/main */
 #filosofia {
   padding: 0 5%;
   background-color: #9ac7ca;
@@ -851,7 +857,7 @@ body {
     #filosofia h2 {
       text-align: left; } }
 
-/* line 93, /Users/Daniela/Desktop/coloringdreams/scss/components/main */
+/* line 98, /Users/Daniela/Desktop/coloringdreams/scss/components/main */
 #filosofia:after {
   content: '';
   position: absolute;
@@ -878,7 +884,7 @@ body {
       -ms-transform: translateY(-13rem);
           transform: translateY(-13rem); } }
 
-/* line 117, /Users/Daniela/Desktop/coloringdreams/scss/components/main */
+/* line 122, /Users/Daniela/Desktop/coloringdreams/scss/components/main */
 #filosofia:before {
   content: '';
   position: absolute;
@@ -901,7 +907,7 @@ body {
     #filosofia:before {
       top: -19rem; } }
 
-/* line 140, /Users/Daniela/Desktop/coloringdreams/scss/components/main */
+/* line 145, /Users/Daniela/Desktop/coloringdreams/scss/components/main */
 .image-holder, .image-rotate {
   display: block;
   width: 31.25rem;
@@ -909,7 +915,7 @@ body {
   position: absolute;
   top: 0; }
 
-/* line 148, /Users/Daniela/Desktop/coloringdreams/scss/components/main */
+/* line 153, /Users/Daniela/Desktop/coloringdreams/scss/components/main */
 .filosofia-illus {
   position: relative;
   display: block;
@@ -924,8 +930,18 @@ body {
       -webkit-transform: scale(0.8, 0.8);
       top: 0;
       left: 0; } }
+  @media only screen and (min-width: 60em) {
+    .filosofia-illus {
+      -webkit-transform: scale(1, 1);
+      top: 0;
+      left: 0; } }
+  @media only screen and (min-width: 85em) {
+    .filosofia-illus {
+      -webkit-transform: scale(1.1, 1.1);
+      top: 0;
+      left: 0; } }
 
-/* line 166, /Users/Daniela/Desktop/coloringdreams/scss/components/main */
+/* line 180, /Users/Daniela/Desktop/coloringdreams/scss/components/main */
 .chico, .lineas {
   position: absolute;
   top: 0;
@@ -933,11 +949,11 @@ body {
   left: 0;
   right: 0; }
 
-/* line 174, /Users/Daniela/Desktop/coloringdreams/scss/components/main */
+/* line 188, /Users/Daniela/Desktop/coloringdreams/scss/components/main */
 .lineas {
   -webkit-animation: rotate 10s linear infinite; }
 
-/* line 178, /Users/Daniela/Desktop/coloringdreams/scss/components/main */
+/* line 192, /Users/Daniela/Desktop/coloringdreams/scss/components/main */
 .illus {
   width: 6.25em;
   margin: 0;
@@ -949,88 +965,141 @@ body {
   -webkit-animation: myOrbit 10s linear infinite;
   animation: myOrbit 10s linear infinite; }
 
-/* line 192, /Users/Daniela/Desktop/coloringdreams/scss/components/main */
+/* line 206, /Users/Daniela/Desktop/coloringdreams/scss/components/main */
 .illus-2 {
   -webkit-animation-delay: 1210ms;
   animation-delay: 1210ms; }
 
-/* line 199, /Users/Daniela/Desktop/coloringdreams/scss/components/main */
+/* line 213, /Users/Daniela/Desktop/coloringdreams/scss/components/main */
 .illus-3 {
   -webkit-animation-delay: 3800ms;
   animation-delay: 1468ms; }
 
-/* line 206, /Users/Daniela/Desktop/coloringdreams/scss/components/main */
+/* line 220, /Users/Daniela/Desktop/coloringdreams/scss/components/main */
 .illus-4 {
   -webkit-animation-delay: 5050ms;
   animation-delay: 5050ms; }
 
-/* line 213, /Users/Daniela/Desktop/coloringdreams/scss/components/main */
+/* line 227, /Users/Daniela/Desktop/coloringdreams/scss/components/main */
 .illus-5 {
   -webkit-animation-delay: 6250ms;
   animation-delay: 6000ms; }
 
-/* line 220, /Users/Daniela/Desktop/coloringdreams/scss/components/main */
+/* line 234, /Users/Daniela/Desktop/coloringdreams/scss/components/main */
 .illus-6 {
   -webkit-animation-delay: 7500ms;
   animation-delay: 7500ms; }
 
-/* line 227, /Users/Daniela/Desktop/coloringdreams/scss/components/main */
+/* line 241, /Users/Daniela/Desktop/coloringdreams/scss/components/main */
 .illus-7 {
   -webkit-animation-delay: 8750ms;
   animation-delay: 8750ms; }
 
-/* line 235, /Users/Daniela/Desktop/coloringdreams/scss/components/main */
+/* line 249, /Users/Daniela/Desktop/coloringdreams/scss/components/main */
 .illus-8 {
   -webkit-animation-delay: 2500ms;
   animation-delay: 2500ms; }
 
 /* Animations */
 @-webkit-keyframes rotate {
-  /* line 246, /Users/Daniela/Desktop/coloringdreams/scss/components/main */
+  /* line 260, /Users/Daniela/Desktop/coloringdreams/scss/components/main */
   from {
     -webkit-transform: rotate(0deg); }
 
-  /* line 247, /Users/Daniela/Desktop/coloringdreams/scss/components/main */
+  /* line 261, /Users/Daniela/Desktop/coloringdreams/scss/components/main */
   to {
     -webkit-transform: rotate(360deg); } }
 
 @keyframes rotate {
-  /* line 251, /Users/Daniela/Desktop/coloringdreams/scss/components/main */
+  /* line 265, /Users/Daniela/Desktop/coloringdreams/scss/components/main */
   from {
     -webkit-transform: rotate(0deg); }
 
-  /* line 252, /Users/Daniela/Desktop/coloringdreams/scss/components/main */
+  /* line 266, /Users/Daniela/Desktop/coloringdreams/scss/components/main */
   to {
     -webkit-transform: rotate(360deg); } }
 
 @-webkit-keyframes myOrbit {
-  /* line 256, /Users/Daniela/Desktop/coloringdreams/scss/components/main */
+  /* line 270, /Users/Daniela/Desktop/coloringdreams/scss/components/main */
   from {
     -webkit-transform: rotate(0deg) translateX(10.625em) rotate(0deg); }
 
-  /* line 257, /Users/Daniela/Desktop/coloringdreams/scss/components/main */
+  /* line 271, /Users/Daniela/Desktop/coloringdreams/scss/components/main */
   to {
     -webkit-transform: rotate(360deg) translateX(10.625em) rotate(-360deg); } }
 
 @keyframes myOrbit {
-  /* line 271, /Users/Daniela/Desktop/coloringdreams/scss/components/main */
+  /* line 285, /Users/Daniela/Desktop/coloringdreams/scss/components/main */
   from {
     -webkit-transform: rotate(0deg) translateX(10.625em) rotate(0deg);
             transform: rotate(0deg) translateX(10.625em) rotate(0deg); }
 
-  /* line 272, /Users/Daniela/Desktop/coloringdreams/scss/components/main */
+  /* line 286, /Users/Daniela/Desktop/coloringdreams/scss/components/main */
   to {
     -webkit-transform: rotate(360deg) translateX(10.625em) rotate(-360deg);
             transform: rotate(360deg) translateX(10.625em) rotate(-360deg); } }
 
 @media only screen and (min-width: 60em) {
-  /* line 278, /Users/Daniela/Desktop/coloringdreams/scss/components/main */
+  /* line 292, /Users/Daniela/Desktop/coloringdreams/scss/components/main */
   body {
     padding-top: 10rem; }
 
-  /* line 282, /Users/Daniela/Desktop/coloringdreams/scss/components/main */
+  /* line 296, /Users/Daniela/Desktop/coloringdreams/scss/components/main */
   section {
     width: 90%;
     max-width: 45rem;
     margin: 0 auto; }
  }
+
+/* line 304, /Users/Daniela/Desktop/coloringdreams/scss/components/main */
+#misionvision {
+  background: url(../../images/coloringdreams-girl.jpg);
+  background-size: cover;
+  background-position: center center; }
+
+/* line 310, /Users/Daniela/Desktop/coloringdreams/scss/components/main */
+.mision, .vision {
+  padding: 9% 5%;
+  color: #fff; }
+  /* line 313, /Users/Daniela/Desktop/coloringdreams/scss/components/main */
+  .mision .flex-img, .vision .flex-img {
+    width: 15rem; }
+
+/* line 318, /Users/Daniela/Desktop/coloringdreams/scss/components/main */
+.vision {
+  background-color: rgba(243, 111, 49, 0.77); }
+
+/* line 322, /Users/Daniela/Desktop/coloringdreams/scss/components/main */
+.mision {
+  background-color: rgba(167, 197, 57, 0.77); }
+
+/* line 327, /Users/Daniela/Desktop/coloringdreams/scss/components/main */
+#contact {
+  padding: 5%;
+  background-color: #00929b;
+  color: #fff; }
+  /* line 331, /Users/Daniela/Desktop/coloringdreams/scss/components/main */
+  #contact .location {
+    width: 60%;
+    margin: 0 auto; }
+  @media only screen and (min-width: 60em) {
+    #contact {
+      text-align: left; }
+      /* line 337, /Users/Daniela/Desktop/coloringdreams/scss/components/main */
+      #contact .left {
+        display: inline-block;
+        width: 30%;
+        float: left; }
+        /* line 341, /Users/Daniela/Desktop/coloringdreams/scss/components/main */
+        #contact .left h2 {
+          margin-top: 0; }
+      /* line 345, /Users/Daniela/Desktop/coloringdreams/scss/components/main */
+      #contact .right {
+        width: 70%;
+        float: left; }
+      /* line 349, /Users/Daniela/Desktop/coloringdreams/scss/components/main */
+      #contact .location {
+        display: inline-block;
+        float: left;
+        width: 12rem;
+        margin: 0 2rem; } }

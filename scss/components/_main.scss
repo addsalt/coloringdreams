@@ -31,6 +31,11 @@ body {
     text-align: center;
 }
 
+.flex-img {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
 
 /* Buttons */
 
@@ -159,9 +164,18 @@ body {
         top: 0;
         left: 0;
     }
+    
+    @media only screen and (min-width: 60em) {
+        -webkit-transform: scale(1,1);
+        top: 0;
+        left: 0;
+    }
+    @media only screen and (min-width: 85em) {
+        -webkit-transform: scale(1.1,1.1);
+        top: 0;
+        left: 0;
+    }
 }
-
-
 
 .chico, .lineas {
     position: absolute;
@@ -286,4 +300,63 @@ body {
     }
     
 }
+
+#misionvision {
+    background: url(../../images/coloringdreams-girl.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.mision, .vision {
+    padding: 9% 5%;
+    color: $white;
+    .flex-img {
+        width: 15rem;
+    }
+}
     
+.vision {
+    background-color: rgba(243, 111, 49, .77);
+}
+
+.mision {
+    background-color: rgba(167, 197, 57, .77);
+}
+
+
+#contact {
+    padding: 5%;
+    background-color: $blue;
+    color: $white;
+    .location {
+        width: 60%;
+        margin: 0 auto;
+    }
+    @media only screen and (min-width: 60em) {
+        text-align: left;
+        .left {
+            display: inline-block;
+            width: 30%;
+            float: left;
+            h2 {
+                margin-top: 0;
+            }
+        }
+        .right {
+            width: 70%;
+            float: left;
+        }
+        .location {
+            display: inline-block;
+            float: left;
+            width: 12rem;
+            margin: 0 2rem;
+        }
+    }
+    
+    
+}
+
+
+
+
